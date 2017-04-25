@@ -61,12 +61,332 @@
 
     <li class="apidocModuleLi"><a href="#apidoc.module.monaco-editor-core">module monaco-editor-core</a><ol>
 
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.monaco-editor-core.loader">
+            function <span class="apidocSignatureSpan">monaco-editor-core.</span>loader
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.monaco-editor-core.loader">module monaco-editor-core.loader</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.monaco-editor-core.loader.loader">
+            function <span class="apidocSignatureSpan">monaco-editor-core.</span>loader
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.monaco-editor-core.loader.config">
+            function <span class="apidocSignatureSpan">monaco-editor-core.loader.</span>config
+            <span class="apidocSignatureSpan">(params, shouldOverwrite)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.monaco-editor-core.loader.getBuildInfo">
+            function <span class="apidocSignatureSpan">monaco-editor-core.loader.</span>getBuildInfo
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.monaco-editor-core.loader.getConfig">
+            function <span class="apidocSignatureSpan">monaco-editor-core.loader.</span>getConfig
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.monaco-editor-core.loader.getStats">
+            function <span class="apidocSignatureSpan">monaco-editor-core.loader.</span>getStats
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.monaco-editor-core.loader.nodeRequire">
+            function <span class="apidocSignatureSpan">monaco-editor-core.loader.</span>nodeRequire
+            <span class="apidocSignatureSpan">(what)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.monaco-editor-core.loader.reset">
+            function <span class="apidocSignatureSpan">monaco-editor-core.loader.</span>reset
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
     </ol></li>
 
 </ol></div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.monaco-editor-core" id="apidoc.module.monaco-editor-core">module monaco-editor-core</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.monaco-editor-core.loader" id="apidoc.element.monaco-editor-core.loader">
+        function <span class="apidocSignatureSpan">monaco-editor-core.</span>loader
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function RequireFunc() {
+    if (arguments.length === 1) {
+        if ((arguments[0] instanceof Object) &#x26;&#x26; !Array.isArray(arguments[0])) {
+            RequireFunc.config(arguments[0]);
+            return;
+        }
+        if (typeof arguments[0] === &#x27;string&#x27;) {
+            return moduleManager.synchronousRequire(arguments[0]);
+        }
+    }
+    if (arguments.length === 2 || arguments.length === 3) {
+        if (Array.isArray(arguments[0])) {
+            moduleManager.defineModule(AMDLoader.Utilities.generateAnonymousModule(), arguments[0], arguments[1], arguments[2],
+null);
+            return;
+        }
+    }
+    throw new Error(&#x27;Unrecognized require call&#x27;);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.monaco-editor-core.loader" id="apidoc.module.monaco-editor-core.loader">module monaco-editor-core.loader</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.monaco-editor-core.loader.loader" id="apidoc.element.monaco-editor-core.loader.loader">
+        function <span class="apidocSignatureSpan">monaco-editor-core.</span>loader
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function RequireFunc() {
+    if (arguments.length === 1) {
+        if ((arguments[0] instanceof Object) &#x26;&#x26; !Array.isArray(arguments[0])) {
+            RequireFunc.config(arguments[0]);
+            return;
+        }
+        if (typeof arguments[0] === &#x27;string&#x27;) {
+            return moduleManager.synchronousRequire(arguments[0]);
+        }
+    }
+    if (arguments.length === 2 || arguments.length === 3) {
+        if (Array.isArray(arguments[0])) {
+            moduleManager.defineModule(AMDLoader.Utilities.generateAnonymousModule(), arguments[0], arguments[1], arguments[2],
+null);
+            return;
+        }
+    }
+    throw new Error(&#x27;Unrecognized require call&#x27;);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.monaco-editor-core.loader.config" id="apidoc.element.monaco-editor-core.loader.config">
+        function <span class="apidocSignatureSpan">monaco-editor-core.loader.</span>config
+        <span class="apidocSignatureSpan">(params, shouldOverwrite)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">config = function (params, shouldOverwrite) {
+    if (shouldOverwrite === void 0) { shouldOverwrite = false; }
+    moduleManager.configure(params, shouldOverwrite);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    jQuery: true
+};
+AMDLoader.DefineFunc = DefineFunc;
+var RequireFunc = (function () {
+    function RequireFunc() {
+        if (arguments.length === 1) {
+            if ((arguments[0] instanceof Object) &#x26;&#x26; !Array.isArray(arguments[0])) {
+                RequireFunc.<span class="apidocCodeKeywordSpan">config</span>(arguments[0]);
+                return;
+            }
+            if (typeof arguments[0] === &#x27;string&#x27;) {
+                return moduleManager.synchronousRequire(arguments[0]);
+            }
+        }
+        if (arguments.length === 2 || arguments.length === 3) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.monaco-editor-core.loader.getBuildInfo" id="apidoc.element.monaco-editor-core.loader.getBuildInfo">
+        function <span class="apidocSignatureSpan">monaco-editor-core.loader.</span>getBuildInfo
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getBuildInfo = function () {
+    return moduleManager.getBuildInfo();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+RequireFunc.reset = function () {
+    moduleManager = new AMDLoader.ModuleManager(AMDLoader.scriptLoader, loaderAvailableTimestamp);
+};
+/**
+ * Non standard extension to fetch loader state for building purposes.
+ */
+RequireFunc.getBuildInfo = function () {
+    return moduleManager.<span class="apidocCodeKeywordSpan">getBuildInfo</span>();
+};
+/**
+ * Non standard extension to fetch loader events
+ */
+RequireFunc.getStats = function () {
+    return moduleManager.getLoaderEvents();
+};
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.monaco-editor-core.loader.getConfig" id="apidoc.element.monaco-editor-core.loader.getConfig">
+        function <span class="apidocSignatureSpan">monaco-editor-core.loader.</span>getConfig
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getConfig = function () {
+    return moduleManager.getConfig().getOptionsLiteral();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    this._fs = nodeRequire(&#x27;fs&#x27;);
+    this._vm = nodeRequire(&#x27;vm&#x27;);
+    this._path = nodeRequire(&#x27;path&#x27;);
+    this._crypto = nodeRequire(&#x27;crypto&#x27;);
+};
+NodeScriptLoader.prototype.load = function (moduleManager, scriptSrc, callback, errorback) {
+    var _this = this;
+    var opts = moduleManager.<span class="apidocCodeKeywordSpan">getConfig</span>().getOptionsLiteral();
+    var nodeRequire = (opts.nodeRequire || AMDLoader.global.nodeRequire);
+    var nodeInstrumenter = (opts.nodeInstrumenter || function (c) { return c; });
+    this._init(nodeRequire);
+    var recorder = moduleManager.getRecorder();
+    if (/^node\|/.test(scriptSrc)) {
+        var pieces = scriptSrc.split(&#x27;|&#x27;);
+        var moduleExports_1 = null;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.monaco-editor-core.loader.getStats" id="apidoc.element.monaco-editor-core.loader.getStats">
+        function <span class="apidocSignatureSpan">monaco-editor-core.loader.</span>getStats
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getStats = function () {
+    return moduleManager.getLoaderEvents();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.monaco-editor-core.loader.nodeRequire" id="apidoc.element.monaco-editor-core.loader.nodeRequire">
+        function <span class="apidocSignatureSpan">monaco-editor-core.loader.</span>nodeRequire
+        <span class="apidocSignatureSpan">(what)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">nodeRequire = function (what) {
+    moduleManager.getRecorder().record(AMDLoader.LoaderEventType.NodeBeginNativeRequire, what);
+    try {
+        return _nodeRequire(what);
+    }
+    finally {
+        moduleManager.getRecorder().record(AMDLoader.LoaderEventType.NodeEndNativeRequire, what);
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        var linkNode = this.createLinkTag(name, cssUrl, externalCallback, externalErrorback);
+        this._insertLinkNode(linkNode);
+    };
+    return BrowserCSSLoader;
+}());
+var NodeCSSLoader = (function () {
+    function NodeCSSLoader() {
+        this.fs = require.<span class="apidocCodeKeywordSpan">nodeRequire</span>(&#x27;fs&#x27;);
+    }
+    NodeCSSLoader.prototype.load = function (name, cssUrl, externalCallback, externalErrorback) {
+        var contents = this.fs.readFileSync(cssUrl, &#x27;utf8&#x27;);
+        // Remove BOM
+        if (contents.charCodeAt(0) === NodeCSSLoader.BOM_CHAR_CODE) {
+            contents = contents.substring(1);
+        }
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.monaco-editor-core.loader.reset" id="apidoc.element.monaco-editor-core.loader.reset">
+        function <span class="apidocSignatureSpan">monaco-editor-core.loader.</span>reset
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">reset = function () {
+    moduleManager = new AMDLoader.ModuleManager(AMDLoader.scriptLoader, loaderAvailableTimestamp);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    modes.SignatureHelpProviderRegistry.onDidChange(this._update, this, this._disposables);
+    this._update();
+}
+EditorModeContext.prototype.dispose = function () {
+    this._disposables = lifecycle_1.dispose(this._disposables);
+};
+EditorModeContext.prototype.reset = function () {
+    this._langId.<span class="apidocCodeKeywordSpan">reset</span>();
+    this._hasCompletionItemProvider.reset();
+    this._hasCodeActionsProvider.reset();
+    this._hasCodeLensProvider.reset();
+    this._hasDefinitionProvider.reset();
+    this._hasImplementationProvider.reset();
+    this._hasHoverProvider.reset();
+    this._hasDocumentHighlightProvider.reset();
+...</pre></li>
+    </ul>
+
 
 </div>
 
