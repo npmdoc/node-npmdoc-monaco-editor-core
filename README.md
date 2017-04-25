@@ -1,4 +1,7 @@
-# api documentation for  [monaco-editor-core (v0.8.2)](https://github.com/Microsoft/vscode#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-monaco-editor-core.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-monaco-editor-core) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-monaco-editor-core.svg)](https://travis-ci.org/npmdoc/node-npmdoc-monaco-editor-core)
+# npmdoc-monaco-editor-core
+
+#### basic api documentation for  [monaco-editor-core (v0.8.2)](https://github.com/Microsoft/vscode#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-monaco-editor-core.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-monaco-editor-core) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-monaco-editor-core.svg)](https://travis-ci.org/npmdoc/node-npmdoc-monaco-editor-core)
+
 #### A browser based code editor
 
 [![NPM](https://nodei.co/npm/monaco-editor-core.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/monaco-editor-core)
@@ -96,7 +99,8 @@
         "url": "git+https://github.com/Microsoft/vscode.git"
     },
     "scripts": {},
-    "version": "0.8.2"
+    "version": "0.8.2",
+    "bin": {}
 }
 ```
 
